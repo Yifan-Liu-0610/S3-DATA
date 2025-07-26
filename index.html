@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Metro-North 显示面板</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div id="frame-wrapper">
+    <div id="frame">
+
+      <!-- 主视频区域 -->
+      <div id="video-box">
+        <video id="main-video" src="./video/timelapse.mp4" autoplay muted playsinline></video>
+      </div>
+
+      <!-- 波形图视频 -->
+      <video id="wave-video" src="./video/波形图.mp4" muted autoplay playsinline></video>
+
+      <!-- 网格图层 -->
+      <div id="grid-overlay"></div>
+      <div id="wave-grid-overlay"></div>
+
+      <!-- 信息面板 -->
+      <div id="panel-top">
+        <div id="panel-default-message" class="panel-message">Hover over a square to view restaurant info</div>
+      </div>
+      <div id="panel-middle"><span id="clock">00:00:00</span></div>
+      <div id="panel-bottom"></div>
+      <div id="panel-start"><span id="panel-icon">❚❚</span></div>
+      <div id="status-box"><span id="video-time">00:00</span></div>
+
+      <!-- 进入全屏提示 -->
+      <div id="fullscreen-overlay">
+        <button id="enter-fullscreen"> >> Please click to enter full screen mode for the best experience << </button>
+      </div>
+
+      <!-- 红点标记 -->
+      <div id="dot1" class="red-dot" data-id="1"></div>
+      <div id="dot2" class="red-dot" data-id="2"></div>
+      <div id="dot3" class="red-dot" data-id="3"></div>
+      <div id="dot4" class="red-dot" data-id="4"></div>
+      <div id="dot5" class="red-dot" data-id="5"></div>
+      <div id="dot6" class="red-dot" data-id="6"></div>
+      <div id="dot7" class="red-dot" data-id="7"></div>
+      <div id="dot8" class="red-dot" data-id="8"></div>
+      <div id="dot9" class="red-dot" data-id="9"></div>
+      <div id="dot10" class="red-dot" data-id="10"></div>
+      <div id="dot11" class="red-dot" data-id="11"></div>
+      <div id="dot12" class="red-dot" data-id="12"></div>
+      <div id="dot13" class="red-dot" data-id="13"></div>
+      <div id="dot14" class="red-dot" data-id="14"></div>
+      <div id="dot15" class="red-dot" data-id="15"></div>
+      <div id="dot16" class="red-dot" data-id="16"></div>
+      <div id="dot17" class="red-dot" data-id="17"></div>
+      <div id="dot18" class="red-dot" data-id="18"></div>
+      <div id="dot19" class="red-dot" data-id="19"></div>
+      <div id="dot20" class="red-dot" data-id="20"></div>
+      <div id="dot21" class="red-dot" data-id="21"></div>
+      <div id="dot22" class="red-dot" data-id="22"></div>
+      <div id="dot23" class="red-dot" data-id="23"></div>
+      <div id="dot24" class="red-dot" data-id="24"></div>
+      <div id="dot25" class="red-dot" data-id="25"></div>
+
+    </div>
+
+    <!-- 滑动条背景 + 控制条 -->
+    <img id="slider-bar-bg" src="./bar.png" alt="bar background" />
+    <input type="range" id="video-slider" min="0" max="100" value="0" step="0.1" />
+  </div>
+</body>
+</html>
