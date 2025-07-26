@@ -1,0 +1,14 @@
+[
+  {
+    "time": 12.0,
+    "x": 300,
+    "y": 180,
+    "text": "Train arrived at platform"
+  },
+  {
+    "time": 25.0,
+    "x": 400,
+    "y": 250,
+    "text": "Passenger exits train"
+  }
+]
